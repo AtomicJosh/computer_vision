@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( mask_rcnn_cpp )
+find_package( OpenCV REQUIRED )
+add_executable( mask_rcnn_cpp mask_rcnn_cpp.cpp )
+target_link_libraries( mask_rcnn_cpp ${OpenCV_LIBS} )
+set(OpenCV_DIR /home/josh/Documents/opencv_working/opencv/build/OpenCVConfig.cmake)

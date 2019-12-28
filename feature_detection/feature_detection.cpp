@@ -22,8 +22,7 @@ int main(int argc, char* argv[])
   }
 
   // Step 1: Detect the keypoints using FAST detector
-  int threshold
-  Ptr<FastFeatureDetector> detector = FastFeatureDetector::create(50);
+  Ptr<FastFeatureDetector> detector = FastFeatureDetector::create(50); // 50 is the threshold
   
   std::vector<KeyPoint> keypoints;
   detector->detect(src, keypoints);
@@ -34,6 +33,7 @@ int main(int argc, char* argv[])
 
   // Step 3: Show drawn keypoints
   imshow("FAST Keypoints", img_keypoints);
+  imwrite("feature_detection_out.jpg", img_keypoints);
 
   waitKey();
   return 0;
