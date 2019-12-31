@@ -2,6 +2,14 @@
 
 This repository contains a few scripts I've written related to computer vision. 
 
+## What's in development
+
+- I'm working on a C++ implementation of YOLOv3, which is much better for real time applications than Mask-RCNN due to its speed.
+
+- To refresh my memory of the fundamentals of machine learning, I'll be implementing some python jupyter notebooks of common object detection and segmentation models.
+
+- I'm also working on a demonstration of feature matching, which will evolve into a demonstration of 3D reconstruction with bundle adjustment. Further down the line I'll implement a full Simultaneous Location and Mapping (SLAM) program.
+
 ## An Overview of the Scripts
 
 Here is an overview of each script. Note that each script is heavily commented, so should be self explanatory while looking through the code.
